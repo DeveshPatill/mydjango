@@ -95,4 +95,8 @@ This project is licensed under the MIT License.
 
 ## Contact
 For queries or support, contact [patildevesh677@gmail.com] 
+![image](https://github.com/user-attachments/assets/91d84265-2f7d-424e-b2aa-456e7aaaaa14)
+![image](https://github.com/user-attachments/assets/40ad839e-e636-414a-91f9-6ca745454cd5)
+
+
 
