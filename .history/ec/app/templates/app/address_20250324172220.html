@@ -1,0 +1,23 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Address{% endblock title %}
+
+
+
+{% block banner-slider %}
+<div class="container my-5">
+    <div class="row">
+        <h3>Welcome <span class="text-capitalize">{{ request.user }}</span></h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 border-end">
+            <ul class="list-unstyled">
+                <li class="d-grid">
+                    <a href="{% url 'profile' %}" class="btn btn-primary">Profile</a>
+                </li>
+                <li class="d-grid">
+                    <a href="{% url 'address' %}" class="btn">Address</a>
+                </li>
+            </ul>
+        </div>
+{% endblock banner-slider %}

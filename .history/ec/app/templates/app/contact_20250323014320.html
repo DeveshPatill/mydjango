@@ -1,0 +1,65 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+
+{% block main-content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Contact Information</h2>
+    <div id="contactCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            
+            <!-- Slide 1: Address -->
+            <div class="carousel-item active">
+                <div class="text-center p-4 bg-primary text-white rounded">
+                    <h3>📍 Address</h3>
+                    <p>Neel Dairy Pvt. Ltd.</p>
+                    <p>123, Dairy Farm Road, Mumbai, Maharashtra, India – 400001</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Phone -->
+            <div class="carousel-item">
+                <div class="text-center p-4 bg-success text-white rounded">
+                    <h3>📞 Contact Number</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Email -->
+            <div class="carousel-item">
+                <div class="text-center p-4 bg-danger text-white rounded">
+                    <h3>📧 Email</h3>
+                    <p>support@neeldairy.com</p>
+                </div>
+            </div>
+
+            <!-- Slide 4: Website -->
+            <div class="carousel-item">
+                <div class="text-center p-4 bg-info text-white rounded">
+                    <h3>🌐 Website</h3>
+                    <p><a href="https://www.neeldairy.com" class="text-white" target="_blank">www.neeldairy.com</a></p>
+                </div>
+            </div>
+
+            <!-- Slide 5: Business Hours -->
+            <div class="carousel-item">
+                <div class="text-center p-4 bg-warning text-dark rounded">
+                    <h3>🕒 Business Hours</h3>
+                    <p>Monday – Saturday: 9:00 AM – 7:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#contactCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#contactCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+{% endblock main-content %}

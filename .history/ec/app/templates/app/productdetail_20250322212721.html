@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} ProductDetail {% endblock title %}
+
+
+{% block main-content %}
+
+<h1>product details id is {{product}}</h1>
+<div class="container">
+    <div class="row-flex justify-content-between">
+        <div class="img2 col-lg-5 mt-5">
+            <img src="{{product.product_image.url}}" class="img col-xs-6 col-sm-12 col-lg-12 mt-3 text-sm-center w-100 h-75" alt="">
+        </div>
+        <div class="productdetail col-lg-5">
+            
+        </div>
+
+    </div>
+</div>
+{% endblock main-content %}

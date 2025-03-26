@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Address{% endblock title %}
+
+
+
+{% block banner-slider %}
+<div class="container my-5">
+    <div class="row">
+        <h3>Welcome <span class="text-capitalize">{{ request.user }}</span></h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 border-end">
+            <ul class="list-unstyled">
+                <li class="d-grid">
+                    <a href="{% url 'profile' %}" class="btn btn-primary">Profile</a>
+                </li>
+                <br>
+                <li class="d-grid">
+                    <a href="{% url 'address' %}" class="btn btn-primary">Address</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="col-sm-8 offset-sm-1">
+            <div class="row">
+                {% for ad in add %}
+                    <div class="col-sm-6">
+                        <div class="card m-2">
+                            <div class="card-body">
+                                <h3>Address {{ forloop.counter }}</h3>
+                                <p><strong>Name:</strong> {{ ad.name }}</p>
+                                <p><strong>Locality:</strong> {{ ad.locality }}</p>
+                                <p><strong>Mobile:</strong> {{ ad.mobile }}</p>
+                                <p><strong>City:</strong> {{ ad.city }}</p>
+                                <p><strong>State:</strong> {{ ad.state }}</p>
+                                <p><strong>Pincode:</strong> {{ ad.zipcode }}</p>
+                            </div>
+                        </div>
+                    </div>                
+                {% endfor %}
+            </div>
+        </div>
+{% endblock banner-slider %}

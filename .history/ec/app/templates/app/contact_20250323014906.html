@@ -1,0 +1,47 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+
+{% block main-content %}
+<div class="container-fluid p-0">
+    <!-- Background Image Carousel -->
+    <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/images/banner1.jpg" class="d-block w-100" alt="Dairy Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="static/images/banner2.jpg" class="d-block w-100" alt="Dairy Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="static/images/banner3.jpg" class="d-block w-100" alt="Dairy Banner 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Contact Information (Bottom Center) -->
+    <div class="contact-box">
+        <h3>📍 Address</h3>
+        <p>Neel Dairy Pvt. Ltd.</p>
+        <p>123, Dairy Farm Road, Mumbai, Maharashtra, India – 400001</p>
+
+        <h3>📞 Contact Number</h3>
+        <p>+91 98765 43210</p>
+
+        <h3>📧 Email</h3>
+        <p>support@neeldairy.com</p>
+
+        <h3>🌐 Website</h3>
+        <p><a href="https://www.neeldairy.com" class="text-white" target="_blank">www.neeldairy.com</a></p>
+
+        <h3>🕒 Business Hours</h3>
+        <p>Monday – Saturday: 9:00 AM – 7:00 PM</p>
+        <p>Sunday: Closed</p>
+    </div>
+</div>
+
+
+
+
+{% endblock main-content %}

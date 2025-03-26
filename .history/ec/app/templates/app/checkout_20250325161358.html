@@ -1,0 +1,30 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} checkout {% endblock title %}
+
+{% block main-content %}
+<div class="container">
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-danger" role="alert">
+                {{ msg }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <h4>Order Summary</h4>
+            <hr>
+            {% for item in cart_items %}
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5>Product: {{ item.product.title }}</h5>
+                        <p>Quantity: {{ item.quantity }}</p>
+                        <p class="fw-bold">Price: {{ item.product.discounted_price }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <p class="fw-bold">Total Cost + Rs. 40 = {{ totalamount }}</p>
+
+{% endblock main-content %}
